@@ -1,18 +1,16 @@
-function Badge({ label, value, color }) {
+import PropTypes from "prop-types";
+
+function Badge({ label, value }) {
   return (
-    <div
-      style={{
-        border: `1px solid ${color}`,
-        color: color,
-        padding: "10px 14px",
-        borderRadius: "12px",
-        marginBottom: "10px",
-        width: "fit-content",
-      }}
-    >
+    <p>
       <strong>{label}:</strong> {value}
-    </div>
+    </p>
   );
 }
+
+Badge.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+};
 
 export default Badge;

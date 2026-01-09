@@ -2,15 +2,13 @@ import Badge from "./components/Badge";
 
 function App() {
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div>
       <h1>Week 1 : Reusable React Component</h1>
 
-
-    <Badge label="Course" value="React" color="blue" />
-    <Badge label="Week" value={1} color="green" />
-    <Badge label="Topic" value="Props" color="purple" />
-    <Badge label="Status" value="Completed" color="orange" />
-
+      <Badge label="Course" value="React" />
+      <Badge label="Week" value={1} />
+      <Badge label="Topic" value="Props" />
+      <Badge label="Status" value="Completed" />
     </div>
   );
 }
